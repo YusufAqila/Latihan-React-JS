@@ -15,6 +15,7 @@ export default function Router() {
       <Route path="day2" element={<Day2 />} />
 
       <Route path="day3" element={<Day3 />} />
+      <Route path="day3/:pageNumber" element={<Day3 />} />
       <Route path="*" element={<NoPage />} />
     </Routes>
   );

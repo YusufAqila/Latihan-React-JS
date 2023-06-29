@@ -74,17 +74,22 @@ export default function Day2() {
       <InputToDoList handleSubmit={addList} />
       <DisplayToDoList data={list} />
       <hr></hr>
-      <h1><b>Aku menambahkan fallback page yang bisa meredirect kehalaman utama lagi</b></h1>
+      <h1>
+        <b>
+          Aku menambahkan fallback page yang bisa meredirect kehalaman utama
+          lagi
+        </b>
+      </h1>
     </Case>
   );
 }
 
 Recipe.propTypes = {
-  drinkers: PropTypes.number.isRequired
+  drinkers: PropTypes.number.isRequired,
 };
 InputToDoList.propTypes = {
-  handleSubmit: PropTypes.string.isRequired
+  handleSubmit: PropTypes.string.isRequired,
 };
 DisplayToDoList.propTypes = {
-  data: PropTypes.string.isRequired
+  data: PropTypes.string.isRequired,
 };
